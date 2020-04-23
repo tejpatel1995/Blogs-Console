@@ -105,7 +105,7 @@ namespace BlogsConsole
                         var db = new BloggingContext();
                         var query = db.Blogs.OrderBy(b => b.BlogId);
                         Console.WriteLine("Which blogs posts would you like to view?\n0. Posts from all blogs");
-                        int tempMax = 0;                       
+                        int tempMax = 0;
                         foreach (var item in query)
                         {
                             Console.WriteLine($"{item.BlogId}. Posts from blog: {item.Name}");
